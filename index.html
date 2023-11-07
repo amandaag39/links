@@ -2,23 +2,32 @@
 <html>
 
   <head>
-    <title>Amanda M</title>
+    <title>Amanda Mendez - LINKINBIO</title>
     <meta charset="utf-8">
     <meta name="author" content="Amanda Mendez">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
+
       body {
+        display: flex;
+        justify-content: center;
         background-color: #fef6e4;
         padding-top: 40px;
         padding-bottom: 40px;
       }
 
+      .banner {
+        display: flex;
+        justify-content: center;
+      }
+
       .banner-image {
-        width: 128px;
-        height: 128px;
+        width: 150px;
+        height: 150px;
         object-fit: cover;
-        border-radius: 128px;
-        border: 2mm ridge rgba(227, 169, 241, 0.6);
+        border-radius: 150px;
+        border: 2mm solid rgba(227, 169, 241, 0.6);
       }
 
       .thumbnail {
@@ -27,66 +36,122 @@
         border-radius: 48px;
         object-fit: cover;
       }
+
+      .name {
+        color: #001858;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: x-large;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+      }
+
+      .social-icons {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .social-icons a {
+        color: #f582ae;
+        text-decoration: none;
+      }
+
+      .link {
+        background-color: #8bd3dd;
+        border: 3mm ridge rgba(211, 220, 50, .6);
+        display: flex;
+        align-items: center;
+        padding: 5px;
+      }
+
+      .link a {
+        color: #001858;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: smaller;
+        text-decoration: none;
+        text-align: center;
+        flex-grow: 1;
+      }
+
+      .items {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 640px;
+        flex-grow: 1;
+      }
+
+      .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+      }
+
     </style>
   </head>
 
   <body>
-    <div class="banner">
-      <img src="/thumbnails/amandasheadshot.jpg" alt="Amanda Mendez's headshot" class="banner-image">
-    </div>
+    <div class="items">
 
-    <div class="name">
-      Amanda Mendez
-    </div>
+      <!-- Banner and Heading-->
 
-    <!-- Social Media Links-->
+      <div class="banner">
+        <img src="/thumbnails/amandasheadshot.jpg" alt="Amanda Mendez's headshot" class="banner-image">
+      </div>
 
-    <div class="social-icons">
-      <a href="https://github.com/amandaag39" target="_blank">
-        GitHub
-      </a>
+      <div class="name">
+        AMANDA MENDEZ
+      </div>
 
-      <a href="https://www.linkedin.com/in/amanda-mendez1/" target="_blank">
-        LinkedIn
-      </a>
+      <!-- Social Media Links-->
 
-      <a href="https://www.instagram.com/pandastestingquest/" target="_blank">
-        Instagram
-      </a>
+      <div class="social-icons">
+        <a href="https://github.com/amandaag39" target="_blank" class="fa fa-github"></a>
 
-      <a href="https://twitter.com/PanPandaHeart" target="_blank">
-        Twitter
-      </a>
-    </div>
+        <a href="https://www.linkedin.com/in/amanda-mendez1/" target="_blank" class="fa fa-linkedin">
+        </a>
 
-    <!-- Content Links-->
-    
-    <div class="link">
-      <img src="/thumbnails/study.jpg" class="thumbnail">
-      <a target="_blank" href="https://testautomationu.applitools.com/">
-        Test Automation University - Learn QA Engineering Skills
-      </a>
-    </div>
+        <a href="https://www.instagram.com/pandastestingquest/" target="_blank" class="fa fa-instagram">
+        </a>
 
-    <div class="link">
-      <img src="/thumbnails/javascript.jpg" class="thumbnail">
-      <a target="_blank" href="https://www.modernjsbyexample.net/book/001-introduction">
-        Modern Javascript by Example - Open-Source crash course in Javascript
-      </a>
-    </div>
+        <a href="https://twitter.com/PanPandaHeart" target="_blank" class="fa fa-twitter">
+        </a>
+      </div>
 
-    <div class="link">
-      <img src="/thumbnails/ai.jpg" class="thumbnail">
-      <a target="_blank" href="https://openai.com/blog/teaching-with-ai">
-        Teaching with AI - Optimize learning with AI
-      </a>
-    </div>
+      <!-- Content Links-->
+      
+      <div class="link">
+        <img src="/thumbnails/study.jpg" class="thumbnail">
+        <a target="_blank" href="https://testautomationu.applitools.com/">
+          Test Automation University - Learn QA Engineering Skills
+        </a>
+      </div>
 
-    <div class="link">
-      <img src="/thumbnails/apprenticeship.jpg" class="thumbnail">
-      <a target="_blank" href="https://dpi.uillinois.edu/apprenticeship/">
-        DPI's Pritzker Tech Talent Labs Software Development Program - My current program!
-      </a>
+      <div class="link">
+        <img src="/thumbnails/javascript.jpg" class="thumbnail">
+        <a target="_blank" href="https://www.modernjsbyexample.net/book/001-introduction">
+          Modern Javascript by Example - Open-Source crash course in Javascript
+        </a>
+      </div>
+
+      <div class="link">
+        <img src="/thumbnails/ai.jpg" class="thumbnail">
+        <a target="_blank" href="https://openai.com/blog/teaching-with-ai">
+          Teaching with AI - Optimize learning with AI
+        </a>
+      </div>
+
+      <div class="link">
+        <img src="/thumbnails/apprenticeship.jpg" class="thumbnail">
+        <a target="_blank" href="https://dpi.uillinois.edu/apprenticeship/">
+          DPI's Pritzker Tech Talent Labs Software Development Program - My current program!
+        </a>
+      </div>
     </div>
 
   </body>
